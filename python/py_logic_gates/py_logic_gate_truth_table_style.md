@@ -2,7 +2,7 @@ Dedicated to God the Father
  
  All Rights Reserved Christopher Topalian Copyright 2000-2022
  
- py_logic_gate_truth_table_style.py
+ py_logic_gate_truth_table_style.md
  
  there are different ways to show a truth table
  
