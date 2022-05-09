@@ -1,0 +1,54 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Topalian Copyright 2000-2022 -->
+<!-- js_logic_gate_008_converse_non_implication.html -->
+<!-- creates a CONVERSE NON IMPLICATION gate -->
+
+<html>
+<head>
+<title> Converse Non Implication Gate </title>
+</head>
+
+<body style="background-color: rgb(225,225,225);">
+
+<button onclick="displayIt('theResult', gateCni(0, 1));"> Converse Non Implication Gate </button>
+
+<div id = "theResult"></div>
+
+<script>
+
+function gateCni(a, b)
+{
+    if (a == 0 && b == 1)
+    {
+        return "B True";
+    }
+    else
+    {
+        return "Choose the correct combination of 0 and 1";
+    }
+}
+
+function displayIt(whichElement, whichValue)
+{
+    let result = document.getElementById(whichElement);
+
+    result.innerHTML = whichValue;
+}
+
+// CONVERSE NON IMPLICATION GATE Truth Table
+// A  B
+// 0  0  =  0
+// 0  1  =  1
+// 1  0  =  0
+// 1  1  =  0
+
+// CNi 0100
+
+// Activates Only if B True
+
+// else if numbers other than 0 or 1 are chosen,
+// the else statement will be activated
+</script>
+
+</body>
+</html>

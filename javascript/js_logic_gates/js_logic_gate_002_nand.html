@@ -1,0 +1,57 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Topalian Copyright 2000-2022 -->
+<!-- js_logic_gate_002_nand.html -->
+<!-- creates a NAND gate -->
+
+<html>
+<head>
+<title> NAND Gate </title>
+</head>
+
+<body style="background-color: rgb(225,225,225);">
+
+<button onclick="displayIt('theResult', gateNand(0, 0));"> NAND Gate </button>
+
+<div id = "theResult"></div>
+
+<script>
+
+function gateNand(a, b)
+{
+    if ((a == 0 && b == 0) ||
+        (a == 1 && b == 0) ||
+        (a == 0 && b == 1))
+    {
+        return "Both False or A True or B True"
+    }
+    else
+    {
+        return "Choose the correct combination of 0 and 1";
+    }
+}
+
+function displayIt(whichElement, whichValue)
+{
+    let result = document.getElementById(whichElement);
+
+    result.innerHTML = whichValue;
+}
+
+// NAND GATE Truth Table
+// A  B
+// 0  0  =  1
+// 0  1  =  1
+// 1  0  =  1
+// 1  1  =  0
+
+// NAND 1110
+
+// Activates Only if Both False
+// or A True or B True
+
+// else if numbers other than 0 or 1 are chosen,
+// the else statement will be activated
+</script>
+
+</body>
+</html>

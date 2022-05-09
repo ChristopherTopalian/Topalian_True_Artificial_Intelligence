@@ -1,0 +1,56 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Topalian Copyright 2000-2022 -->
+<!-- js_logic_gate_011_right_projection.html -->
+<!-- creates a RIGHT PROJECTION gate -->
+
+<html>
+<head>
+<title> Right Projection Gate </title>
+</head>
+
+<body style="background-color: rgb(225,225,225);">
+
+<button onclick="displayIt('theResult', gateRp(0, 1));"> Right Projection Gate </button>
+
+<div id = "theResult"></div>
+
+<script>
+
+function gateRp(a, b)
+{
+    if ((a == 0 && b == 1) ||
+        (a == 1 && b == 1))
+    {
+        return "B True or Both True";
+    }
+    else
+    {
+        return "Choose the correct combination of 0 and 1";
+    }
+}
+
+function displayIt(whichElement, whichValue)
+{
+    let result = document.getElementById(whichElement);
+
+    result.innerHTML = whichValue;
+}
+
+// RIGHT PROJECTION GATE Truth Table
+// A  B
+// 0  0  =  0
+// 0  1  =  1
+// 1  0  =  0
+// 1  1  =  1
+
+// RP 0101
+
+// Activates Only if B True
+// or Both True
+
+// else if numbers other than 0 or 1 are chosen,
+// the else statement will be activated
+</script>
+
+</body>
+</html>
