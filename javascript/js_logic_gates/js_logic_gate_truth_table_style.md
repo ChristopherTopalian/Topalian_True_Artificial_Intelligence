@@ -7,7 +7,7 @@ Dedicated to God the Father
  there are different ways to show a truth table
 
  here are some of the options below:
-
+***
  Truth Table Style Conventions
 ***
  ## Style 1
